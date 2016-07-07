@@ -1,13 +1,16 @@
+
 buildscript {
     dependencies {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'
+    }
+
+    repositories {
+        jcenter()
     }
 }
 
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven' // ADD THIS
-
-group='com.github.jitpack'
 
 android {
     compileSdkVersion 23
